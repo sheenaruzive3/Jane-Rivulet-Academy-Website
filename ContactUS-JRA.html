@@ -1,0 +1,429 @@
+ContactUS-JRA
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Rivulet Academy</title>
+    <link rel="icon" type="image/png" href="https://github.com/sheenaruzive3/Jane-Rivulet-Academy-Website/blob/main/android-chrome-512x512(1).png?raw=true">
+    <style>
+* {
+  color:#093058;
+  font-family:'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* vertically align both */
+  justify-content: flex-start; /* keep them on same line, left-aligned */
+  gap: 200px; /* space between logo and nav bar */
+  padding: 10px 20px;
+  z-index: 3;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: white;
+  width: 100%;
+   }
+
+ .logo {
+ width: 150px;
+  height: auto;
+ }
+
+ 
+ 
+#nav-bar ul {
+  display: flex; /* puts nav links in one line */
+  gap: 30px; /* space between nav items */
+  list-style: none; /* remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:#0056b3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+ .hero {
+  position: relative;
+  background-image: url('https://github.com/sheenaruzive3/Jane-Rivulet-Academy-Website/blob/main/524459393_24384236734505006_8221463529767492508_n.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* full screen height */
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black overlay, 50% transparent */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* ensures content appears above overlay */
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: rgb(248, 248, 248);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+  .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+.btn:active {
+  background-color: #06213d;
+  }
+
+  fieldset {
+    display: grid;
+    margin: 50px;
+    padding: 20px;
+    gap: 5px;
+    width: 70%;
+  }
+
+ 
+  footer {
+    width: 100%;
+    height: 30vh;
+    background-color:#8226ec;
+    
+  }
+
+/* Location Section Styles - Added to your existing CSS */
+.location-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.location-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.location-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.option-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.option-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #2575fc;
+}
+
+.option-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.option-description {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.location-btn {
+  display: inline-block;
+  background: #2575fc;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.location-btn:hover {
+  background: #1a68e8;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.coordinates {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.coordinates h2 {
+  margin-bottom: 1rem;
+}
+
+.coords-value {
+  font-family: monospace;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.location-instructions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+}
+
+.location-instructions h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.location-instructions ol {
+  margin-left: 1.5rem;
+}
+
+.location-instructions li {
+  margin-bottom: 1rem;
+}
+
+.location-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eaeaea;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .location-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .location-title {
+    font-size: 2rem;
+  }
+}
+  
+    </style>  
+ </head>
+ <body>
+        
+        <header class="header">
+
+            <!--logo-->
+            <a href="Jane Rivulet Academy.index">
+            <img src="https://github.com/sheenaruzive3/Jane-Rivulet-Academy-Website/blob/main/524459393_24384236734505006_8221463529767492508_n.jpg?raw=true" alt="Jane Rivulet Academy Logo" class="logo">
+        </a>
+
+        <!--navbar-->
+            <nav id="navbar">
+                <li>
+                <ul><a href="Home.html" class="nav-links.html" target="_blank">Home</a></ul>
+                <ul><a href="About-Us.html" class="nav-links.html" target="_blank">About Us</a></ul>
+                <ul><a href="Curriculumn.html" class="nav-links.html" target="_blank">Curriculumn</a></ul>
+                <ul><a href="Contact-Us.html" class="nav-links.html" target="_blank">Contact Us</a></ul>
+                <ul><a href="Notice.html" class="nav-links.html" target="_blank">Notice Board</a></ul>
+                <ul><a href="Gallery.html" class="nav-links.html" target="_blank">Gallery</a></ul>
+                </li>
+            </nav>
+
+        </header>
+        
+        <main>
+
+            
+<section id="Contact-Us">
+<!--Contact Us-->
+<h3>Enrol</h3>
+<p>Click <a href="" method="POST">here</a> or enrol below </button>to enrol your child.</p>
+<a href="#learn-more" class="btn">Enrol</a>
+
+<h2>Contact Us</h2>
+<h3>Fill in form</h3>
+<section id="Contact-form">
+  
+    <form id="contact-us" action="" method="POST">
+      <fieldset>
+        <label for="name" name="name">Name: </label> 
+        <input type="text" name="name" placeholder="Sheena" required> 
+        <br>
+        <label for="surname" name="surname">Surname: </label>
+        <input type="text" name="surname" required placeholder="Ruzive">       
+        <br>
+        <label for="email" name="email">Email: </label>
+        <input type="email" name="email" placeholder="sheenaruzive3@gmail.com" >
+         <br>
+        <input type="number" required>
+        <br>
+        <button type="submit" class="btn">Submit</button>
+        </fieldset>
+       </form>
+    
+   
+
+
+<!--Google Maps for directions-->
+<h3>Find Our Location</h3>
+
+<!-- Location Section - Added under the Google Maps direction comment -->
+<div class="location-container">
+  <div class="location-header">
+    <h1 class="location-title">Find Our Academy</h1>
+    <p class="location-subtitle">We're located in a beautiful natural setting. Use these methods to find us.</p>
+  </div>
+  
+  <div class="coordinates">
+    <h2>GPS Coordinates</h2>
+    <p>Use these coordinates with any navigation app:</p>
+    <div class="coords-value">-19.4564° S, 29.8144° E</div>
+    <p class="location-subtitle">(Coordinates for Gweru, Zimbabwe - replace with your actual location)</p>
+  </div>
+  
+  <div class="location-options">
+    <div class="option-card">
+      <div class="option-icon">📍</div>
+      <h3 class="option-title">Google Maps Plus Code</h3>
+      <p class="option-description">A simple, easy-to-share code that works with Google Maps.</p>
+      <div class="coords-value">5G7V+Q6 Gweru, Zimbabwe</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=-19.4564,29.8144" target="_blank" class="location-btn" style="margin-top: 1rem;">Open in Google Maps</a>
+    </div>
+    
+    <div class="option-card">
+      <div class="option-icon">🗺️</div>
+      <h3 class="option-title">What3Words</h3>
+      <p class="option-description">A precise 3-word address for any 3m x 3m location in the world.</p>
+      <div class="coords-value">///tiger.lion.elephant</div>
+      <a href="https://what3words.com/tiger.lion.elephant" target="_blank" class="location-btn" style="margin-top: 1rem;">Open in What3Words</a>
+    </div>
+    
+    <div class="option-card">
+      <div class="option-icon">📷</div>
+      <h3 class="option-title">Visual Guide</h3>
+      <p class="option-description">Step-by-step directions with photos and landmarks to help you find us.</p>
+      <a href="#" class="location-btn">View Visual Guide</a>
+    </div>
+  </div>
+  
+  <div class="location-instructions">
+    <h2>How to Use These Location Methods</h2>
+    <ol>
+      <li>
+        <strong>GPS Coordinates:</strong> Copy the coordinates and paste them into Google Maps, Apple Maps, or any GPS navigation app.
+      </li>
+      <li>
+        <strong>Google Plus Code:</strong> Type the code directly into Google Maps search bar or use the provided link.
+      </li>
+      <li>
+        <strong>What3Words:</strong> Download the What3Words app or visit their website and enter the three words.
+      </li>
+      <li>
+        <strong>Visual Guide:</strong> Follow the photo-based directions showing key landmarks and turns.
+      </li>
+    </ol>
+  </div>
+  
+  <div class="location-footer">
+    <p>Need additional help finding us? Call us at +263 ** *** ****</p>
+  </div>
+</div>
+
+</main>
+        <footer>
+            <div class="footer1">
+                <address>Plot 29B Umsungwe B, Harmony Road, Harben Park, Gweru, Zimbabwe</address>
+                <email>jane.rivulet@gmail.com</email>
+                <telephone>+263 ** *** **** </telephone>
+            </div>
+            <div class="icons">
+                <!--Icons: Facebook, Twitter, LinkedIn, BlueSky, WhatsApp-->
+            </div>
+            <div class="quick-links">
+
+            </div>
+        </footer>
+        
+        <script>
+            // Location functionality script
+            document.addEventListener('DOMContentLoaded', function() {
+                // If you had actual coordinates, you would set them here
+                // For now, we're using example coordinates for Gweru, Zimbabwe
+                const actualLatitude = -19.454770;
+                const actualLongitude = 29.907083;
+                
+                // Update coordinates display
+                const coordsElement = document.querySelector('.coords-value');
+                if (coordsElement) {
+                    coordsElement.textContent = `${actualLatitude}° S, ${actualLongitude}° E`;
+                }
+                
+                // Update Google Maps link with actual coordinates
+                const googleMapsLink = document.querySelector('a[href*="google.com/maps"]');
+                if (googleMapsLink) {
+                    googleMapsLink.href = `https://www.google.com/maps/search/?api=1&query=${actualLatitude},${actualLongitude}`;
+                }
+            });
+        </script>
+    </body>
+</html>
